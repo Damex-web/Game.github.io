@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Rock Paper Scissors Game</title>
@@ -8,20 +8,22 @@
     <style>
         body {
             text-align: center;
-            padding: 10% 0px;
             margin: 0;
+            padding: 0;
             background: #580012ea;
             height: 100vh;
             color: white;
+            position: relative;
+            width: 100%;
         }
         
         .container {
-            position: fixed;
+            position: relative;
+            height: 100%;
         }
         h1 {
             padding: 20px 10px;
             background: #0e0003ea;
-            
             font-family: 'Pixelify Sans', san_serif;
         }
 
@@ -49,6 +51,22 @@
             justify-content: center;
         }
         
+        footer {
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background: #0d0f1a;
+            text-align: center;  
+        }
+        
+        details{
+            padding: 10px 5px;
+        }
+        
+        summary p{
+            font-size: .5em;
+        }
     </style>
 </head>
 <body>
@@ -65,10 +83,24 @@
             <button class="padBtn" id="paper">📜</button>
             <button class="padBtn" id="scissors">✂️</button>
         </div>
+        
+        
+        
+        <footer>
+        <details>
+            <summary>Thanks To Gitarackur</summary>
+            <p> He is a great TUTOR and MENTOR without him this will not be possible  he is the best when it comes to Front and Back End Development Get in touch 
+            👉
+                <a href="https://pete-v1.netlify.app/"> Gitarackur</a>
+            👈
+            </p>
+        </details>
+    </footer>
     </div>
+    
+    
 
-
-
+    
     <script>
         
         var playerT = document.querySelector("#me");
